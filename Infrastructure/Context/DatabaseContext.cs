@@ -1,4 +1,5 @@
 ﻿using Domain.Entities;
+using Infrastructure.Seed;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 
@@ -30,5 +31,7 @@ public class DatabaseContext : DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+
+        modelBuilder.Seed();
     }
 }

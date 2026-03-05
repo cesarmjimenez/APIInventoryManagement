@@ -1,6 +1,6 @@
-﻿namespace Application.Interfaces
+﻿namespace Application.Interfaces;
+
+public interface IDateTimeService
 {
-    internal interface IDateTimeService
-    {
-    }
+    DateTime NowUtc { get; }
 }

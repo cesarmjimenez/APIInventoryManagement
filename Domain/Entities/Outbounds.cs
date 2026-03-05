@@ -21,7 +21,11 @@ public class Outbounds : IdBaseEntity
 
     public Users OutboundUser { get; set; } = null!;
 
+    public required DateTime OutboundDate { get; set; }
+
     public Guid ReceivedUserId { get; set; }
 
     public Users ReceivedUser { get; set; } = null!;
+
+    public DateTime? ReceivedDate { get; set; }
 }

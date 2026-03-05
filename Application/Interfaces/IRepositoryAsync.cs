@@ -2,7 +2,7 @@
 
 namespace Application.Interfaces;
 
-public interface IRepositoyAsync<T> : IRepositoryBase<T> where T : class
+public interface IRepositoryAsync<T> : IRepositoryBase<T> where T : class
 {
 }
 

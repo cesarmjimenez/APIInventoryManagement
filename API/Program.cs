@@ -1,3 +1,4 @@
+using API.Extensions;
 using Application;
 using Infrastructure;
 
@@ -24,6 +25,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+app.UseErrorHandlerMiddleware();
 
 app.MapControllers();
 

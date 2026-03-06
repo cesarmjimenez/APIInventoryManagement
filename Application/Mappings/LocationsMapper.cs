@@ -4,9 +4,9 @@ using Domain.Entities;
 
 namespace Application.Mappings;
 
-public class LocationsMap : Profile
+public class LocationsMapper : Profile
 {
-    public LocationsMap()
+    public LocationsMapper()
     {
         CreateMap<Locations, LocationsDto>();
     }

@@ -47,7 +47,7 @@ public class CreateOutboundCommandHandler(
 
         decimal totalPending = pendingOutbound.Sum(o => o.OutboundDetails.Sum(od => od.SubTotal));
 
-        if (totalPending > 340)
+        if (totalPending > 5000)
             return new Response<OutboundResponseDto>("No se pueden realizar más salidas a esta sucursal hasta que se reciban las pendientes.")
             { Succeeded = false };
 

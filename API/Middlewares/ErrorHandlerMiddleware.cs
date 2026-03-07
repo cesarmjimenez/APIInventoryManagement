@@ -36,6 +36,11 @@ public class ErrorHandlerMiddleware(RequestDelegate next)
                     response.StatusCode = (int)HttpStatusCode.NotFound;
                     break;
 
+                case UnauthorizedAccessException e:
+                    //not found error
+                    response.StatusCode = (int)HttpStatusCode.Unauthorized;
+                    break;
+
                 default:
                     //unnhandled error
                     response.StatusCode = (int)HttpStatusCode.InternalServerError;

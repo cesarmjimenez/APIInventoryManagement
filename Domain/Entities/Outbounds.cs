@@ -28,4 +28,6 @@ public class Outbounds : IdBaseEntity
     public Users? ReceivedUser { get; set; } = null!;
 
     public DateTime? ReceivedDate { get; set; }
+
+    public ICollection<OutboundDetails> OutboundDetails { get; set; } = [];
 }

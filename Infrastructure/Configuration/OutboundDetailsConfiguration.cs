@@ -21,9 +21,9 @@ public class OutboundDetailsConfiguration : IEntityTypeConfiguration<OutboundDet
             .IsRequired();
 
         builder.HasOne(od => od.Outbound)
-            .WithMany()
+            .WithMany(o => o.OutboundDetails)
             .HasForeignKey(od => od.OutboundId)
-            .OnDelete(DeleteBehavior.Restrict);
+            .OnDelete(DeleteBehavior.Cascade);
 
         builder.HasOne(od => od.ProductBatch)
             .WithMany()

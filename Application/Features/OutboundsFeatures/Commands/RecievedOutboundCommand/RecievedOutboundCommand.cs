@@ -38,6 +38,7 @@ public class RecievedOutboundCommandHandler(
 
         await outboundRepositoryAsync.UpdateAsync(outbound, cancellationToken);
 
-        return new Response<OutboundResponseDto>(mapper.Map<OutboundResponseDto>(outbound), "La salida fue recibida correctamente.");
+        return new Response<OutboundResponseDto>(mapper.Map<OutboundResponseDto>(outbound),
+            "La salida fue recibida correctamente.");
     }
 }

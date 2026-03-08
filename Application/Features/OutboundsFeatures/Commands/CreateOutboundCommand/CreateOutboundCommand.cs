@@ -1,4 +1,5 @@
 ﻿using Application.DTOs.OutboundsDtos;
+using Application.Exceptions;
 using Application.Interfaces;
 using Application.Specifications.InventorySpecifications;
 using Application.Specifications.LocationsSpecifications;
@@ -36,9 +37,9 @@ public class CreateOutboundCommandHandler(
         var user = httpContextAccessor.HttpContext?.User;
         var userId = user?.FindFirst(ClaimTypes.NameIdentifier)?.Value;
         var userRole = user?.FindFirst(ClaimTypes.Role)?.Value;
+
         if (userRole != "Jefe de Bodega")
-            return new Response<OutboundResponseDto>("Solo el Jefe de Bodega puede realizar salidas.")
-            { Succeeded = false };
+            throw new ApiException("Solo el Jefe de Bodega puede realizar salidas.");
 
         var originLocation = await locationsRepositoryAsync.FirstOrDefaultAsync(
             new GetCentralWarehouseSpecification(), cancellationToken);
@@ -48,8 +49,7 @@ public class CreateOutboundCommandHandler(
         decimal totalPending = pendingOutbound.Sum(o => o.OutboundDetails.Sum(od => od.SubTotal));
 
         if (totalPending > 5000)
-            return new Response<OutboundResponseDto>("No se pueden realizar más salidas a esta sucursal hasta que se reciban las pendientes.")
-            { Succeeded = false };
+            throw new ApiException("No se pueden realizar más salidas a esta sucursal hasta que se reciban las pendientes.");
 
         var newOutbound = new Outbounds
         {
@@ -74,8 +74,7 @@ public class CreateOutboundCommandHandler(
             decimal remainingQuantity = item.Quantity;
 
             if (batches.Sum(b => b.Quantity) < item.Quantity)
-                return new Response<OutboundResponseDto>($"Inventario insuficiente para el producto: {item.ProductId}")
-                { Succeeded = false };
+                throw new ApiException($"Inventario insuficiente para el producto: {item.ProductId}");
 
             foreach (var batch in sortedBatches)
             {
@@ -88,7 +87,7 @@ public class CreateOutboundCommandHandler(
                 await productBatchesRepositoryAsync.UpdateAsync(batch, cancellationToken);
 
                 var inventoryItem = await inventoryRepositoryAsync.FirstOrDefaultAsync(
-                    new InventoryByLocationsAndBatchSpecification(originLocation.Id, batch.Id));
+                    new InventoryByLocationsAndBatchSpecification(originLocation.Id, batch.Id), cancellationToken);
 
                 if (inventoryItem != null)
                 {
@@ -112,6 +111,7 @@ public class CreateOutboundCommandHandler(
         await outboundRepositoryAsync.AddAsync(newOutbound, cancellationToken);
         await outboundDetailsRepositoryAsync.AddRangeAsync(details, cancellationToken);
 
-        return new Response<OutboundResponseDto>(mapper.Map<OutboundResponseDto>(newOutbound), "Salida creada con exito.");
+        return new Response<OutboundResponseDto>(mapper.Map<OutboundResponseDto>(newOutbound),
+            "Salida creada con exito.");
     }
 }

@@ -11,4 +11,6 @@ public class Products : IdBaseEntity
     public required string Brand { get; set; }
 
     public bool IsActive { get; set; }
+
+    public ICollection<ProductBatches> ProductBatches { get; set; } = [];
 }

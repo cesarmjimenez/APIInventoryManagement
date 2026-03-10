@@ -31,7 +31,7 @@ public class ProductBatchesConfiguration : IEntityTypeConfiguration<ProductBatch
             .IsRequired();
 
         builder.HasOne(pb => pb.Product)
-            .WithMany()
+            .WithMany(p => p.ProductBatches)
             .HasForeignKey(pb => pb.ProductId)
             .OnDelete(DeleteBehavior.Restrict);
 

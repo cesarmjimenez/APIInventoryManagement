@@ -55,7 +55,6 @@ public class CreateOutboundCommandHandler(
         {
             Id = Guid.NewGuid(),
             OutboundNumber = $"OUT-{DateTime.Now.Ticks}",
-            Status = StatusEnum.EnviadaASucursal,
             DestinationId = request.DestinationId,
             OutboundUserId = Guid.Parse(userId!),
             OutboundDate = DateTime.Now,
@@ -113,6 +112,7 @@ public class CreateOutboundCommandHandler(
 
         var response = mapper.Map<OutboundResponseDto>(newOutbound);
         response.TotalCost = details.Sum(d => d.SubTotal);
+        response.Status = "Enviada a Sucursal";
 
         return new Response<OutboundResponseDto>(response,
             "Salida creada con exito.");

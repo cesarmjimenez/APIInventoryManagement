@@ -111,7 +111,10 @@ public class CreateOutboundCommandHandler(
         await outboundRepositoryAsync.AddAsync(newOutbound, cancellationToken);
         await outboundDetailsRepositoryAsync.AddRangeAsync(details, cancellationToken);
 
-        return new Response<OutboundResponseDto>(mapper.Map<OutboundResponseDto>(newOutbound),
+        var response = mapper.Map<OutboundResponseDto>(newOutbound);
+        response.TotalCosts = details.Sum(d => d.SubTotal);
+
+        return new Response<OutboundResponseDto>(response,
             "Salida creada con exito.");
     }
 }

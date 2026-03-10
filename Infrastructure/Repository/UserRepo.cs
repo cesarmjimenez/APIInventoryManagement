@@ -19,11 +19,8 @@ public class UserRepo(DatabaseContext context, IConfiguration configuration) : I
             .Include(u => u.Role)
             .FirstOrDefaultAsync(u => u.UserName == loginDto.UserName);
 
-        if (getUser == null)
-            return new LoginResponse { Flag = false, Message = "Usuario no encontrado en el sistema" };
-
-        if (getUser.PasswordHash != loginDto.PasswordHash)
-            return new LoginResponse { Flag = false, Message = "Contraseña incorrecta" };
+        if (getUser == null || getUser.PasswordHash != loginDto.PasswordHash)
+            return new LoginResponse { Flag = false, Message = "Usuario o contraseña incorrectos." };
 
         return new LoginResponse { Flag = true, Message = "Login exitoso", Token = GeneratedToken(getUser) };
     }

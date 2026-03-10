@@ -9,4 +9,6 @@ public class OutboundResponseDto
     public string? Status { get; set; }
 
     public DateTime OutboundDate { get; set; }
+
+    public decimal TotalCosts { get; set; }
 }

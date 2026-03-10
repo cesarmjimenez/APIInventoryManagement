@@ -9,4 +9,6 @@ public class ProductsDto
     public string Name { get; set; } = null!;
 
     public string Brand { get; set; } = null!;
+
+    public decimal UnitCost { get; set; }
 }

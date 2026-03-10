@@ -10,5 +10,5 @@ public class OutboundResponseDto
 
     public DateTime OutboundDate { get; set; }
 
-    public decimal TotalCosts { get; set; }
+    public decimal TotalCost { get; set; }
 }

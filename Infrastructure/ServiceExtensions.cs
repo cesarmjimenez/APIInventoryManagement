@@ -44,4 +44,11 @@ public static class ServiceExtensions
         services.AddTransient(typeof(IRepositoryAsync<>), typeof(RepositoryAsync<>));
         #endregion
     }
+
+    public static async Task ApplyMigrationsAsync(this IServiceProvider serviceProvider)
+    {
+        using var scope = serviceProvider.CreateScope();
+        var db = scope.ServiceProvider.GetRequiredService<DatabaseContext>();
+        await db.Database.MigrateAsync();
+    }
 }

@@ -52,56 +52,154 @@ namespace Infrastructure.Migrations
                             Id = new Guid("30000001-0000-0000-0000-000000000001"),
                             LocationId = new Guid("11111111-1111-1111-1111-111111111111"),
                             ProductBatchId = new Guid("20000001-0000-0000-0000-000000000001"),
-                            StockQuantity = 150m
+                            StockQuantity = 500m
                         },
                         new
                         {
                             Id = new Guid("30000002-0000-0000-0000-000000000002"),
-                            LocationId = new Guid("22222222-2222-2222-2222-222222222222"),
+                            LocationId = new Guid("11111111-1111-1111-1111-111111111111"),
                             ProductBatchId = new Guid("20000002-0000-0000-0000-000000000002"),
-                            StockQuantity = 80m
+                            StockQuantity = 300m
                         },
                         new
                         {
                             Id = new Guid("30000003-0000-0000-0000-000000000003"),
                             LocationId = new Guid("11111111-1111-1111-1111-111111111111"),
                             ProductBatchId = new Guid("20000003-0000-0000-0000-000000000003"),
-                            StockQuantity = 200m
+                            StockQuantity = 600m
                         },
                         new
                         {
                             Id = new Guid("30000004-0000-0000-0000-000000000004"),
-                            LocationId = new Guid("33333333-3333-3333-3333-333333333333"),
+                            LocationId = new Guid("11111111-1111-1111-1111-111111111111"),
                             ProductBatchId = new Guid("20000004-0000-0000-0000-000000000004"),
-                            StockQuantity = 120m
+                            StockQuantity = 400m
                         },
                         new
                         {
                             Id = new Guid("30000005-0000-0000-0000-000000000005"),
                             LocationId = new Guid("11111111-1111-1111-1111-111111111111"),
                             ProductBatchId = new Guid("20000005-0000-0000-0000-000000000005"),
-                            StockQuantity = 50m
+                            StockQuantity = 350m
                         },
                         new
                         {
                             Id = new Guid("30000006-0000-0000-0000-000000000006"),
-                            LocationId = new Guid("22222222-2222-2222-2222-222222222222"),
-                            ProductBatchId = new Guid("20000007-0000-0000-0000-000000000007"),
-                            StockQuantity = 300m
+                            LocationId = new Guid("11111111-1111-1111-1111-111111111111"),
+                            ProductBatchId = new Guid("20000006-0000-0000-0000-000000000006"),
+                            StockQuantity = 250m
                         },
                         new
                         {
                             Id = new Guid("30000007-0000-0000-0000-000000000007"),
-                            LocationId = new Guid("44444444-4444-4444-4444-444444444444"),
-                            ProductBatchId = new Guid("2000000a-0000-0000-0000-00000000000a"),
-                            StockQuantity = 220m
+                            LocationId = new Guid("11111111-1111-1111-1111-111111111111"),
+                            ProductBatchId = new Guid("20000007-0000-0000-0000-000000000007"),
+                            StockQuantity = 800m
                         },
                         new
                         {
                             Id = new Guid("30000008-0000-0000-0000-000000000008"),
                             LocationId = new Guid("11111111-1111-1111-1111-111111111111"),
+                            ProductBatchId = new Guid("20000008-0000-0000-0000-000000000008"),
+                            StockQuantity = 200m
+                        },
+                        new
+                        {
+                            Id = new Guid("30000009-0000-0000-0000-000000000009"),
+                            LocationId = new Guid("11111111-1111-1111-1111-111111111111"),
+                            ProductBatchId = new Guid("20000009-0000-0000-0000-000000000009"),
+                            StockQuantity = 450m
+                        },
+                        new
+                        {
+                            Id = new Guid("3000000a-0000-0000-0000-00000000000a"),
+                            LocationId = new Guid("11111111-1111-1111-1111-111111111111"),
+                            ProductBatchId = new Guid("2000000a-0000-0000-0000-00000000000a"),
+                            StockQuantity = 500m
+                        },
+                        new
+                        {
+                            Id = new Guid("3000000b-0000-0000-0000-00000000000b"),
+                            LocationId = new Guid("11111111-1111-1111-1111-111111111111"),
                             ProductBatchId = new Guid("2000000b-0000-0000-0000-00000000000b"),
-                            StockQuantity = 60m
+                            StockQuantity = 300m
+                        },
+                        new
+                        {
+                            Id = new Guid("3000000c-0000-0000-0000-00000000000c"),
+                            LocationId = new Guid("11111111-1111-1111-1111-111111111111"),
+                            ProductBatchId = new Guid("2000000c-0000-0000-0000-00000000000c"),
+                            StockQuantity = 400m
+                        },
+                        new
+                        {
+                            Id = new Guid("3000000d-0000-0000-0000-00000000000d"),
+                            LocationId = new Guid("11111111-1111-1111-1111-111111111111"),
+                            ProductBatchId = new Guid("2000000d-0000-0000-0000-00000000000d"),
+                            StockQuantity = 350m
+                        },
+                        new
+                        {
+                            Id = new Guid("3000000e-0000-0000-0000-00000000000e"),
+                            LocationId = new Guid("11111111-1111-1111-1111-111111111111"),
+                            ProductBatchId = new Guid("2000000e-0000-0000-0000-00000000000e"),
+                            StockQuantity = 280m
+                        },
+                        new
+                        {
+                            Id = new Guid("3000000f-0000-0000-0000-00000000000f"),
+                            LocationId = new Guid("11111111-1111-1111-1111-111111111111"),
+                            ProductBatchId = new Guid("2000000f-0000-0000-0000-00000000000f"),
+                            StockQuantity = 600m
+                        },
+                        new
+                        {
+                            Id = new Guid("30000010-0000-0000-0000-000000000010"),
+                            LocationId = new Guid("11111111-1111-1111-1111-111111111111"),
+                            ProductBatchId = new Guid("20000010-0000-0000-0000-000000000010"),
+                            StockQuantity = 150m
+                        },
+                        new
+                        {
+                            Id = new Guid("30000011-0000-0000-0000-000000000011"),
+                            LocationId = new Guid("11111111-1111-1111-1111-111111111111"),
+                            ProductBatchId = new Guid("20000011-0000-0000-0000-000000000011"),
+                            StockQuantity = 500m
+                        },
+                        new
+                        {
+                            Id = new Guid("30000012-0000-0000-0000-000000000012"),
+                            LocationId = new Guid("11111111-1111-1111-1111-111111111111"),
+                            ProductBatchId = new Guid("20000012-0000-0000-0000-000000000012"),
+                            StockQuantity = 200m
+                        },
+                        new
+                        {
+                            Id = new Guid("30000013-0000-0000-0000-000000000013"),
+                            LocationId = new Guid("11111111-1111-1111-1111-111111111111"),
+                            ProductBatchId = new Guid("20000013-0000-0000-0000-000000000013"),
+                            StockQuantity = 180m
+                        },
+                        new
+                        {
+                            Id = new Guid("30000014-0000-0000-0000-000000000014"),
+                            LocationId = new Guid("11111111-1111-1111-1111-111111111111"),
+                            ProductBatchId = new Guid("20000014-0000-0000-0000-000000000014"),
+                            StockQuantity = 700m
+                        },
+                        new
+                        {
+                            Id = new Guid("30000015-0000-0000-0000-000000000015"),
+                            LocationId = new Guid("11111111-1111-1111-1111-111111111111"),
+                            ProductBatchId = new Guid("20000015-0000-0000-0000-000000000015"),
+                            StockQuantity = 400m
+                        },
+                        new
+                        {
+                            Id = new Guid("30000016-0000-0000-0000-000000000016"),
+                            LocationId = new Guid("11111111-1111-1111-1111-111111111111"),
+                            ProductBatchId = new Guid("20000016-0000-0000-0000-000000000016"),
+                            StockQuantity = 550m
                         });
                 });
 
@@ -148,15 +246,6 @@ namespace Infrastructure.Migrations
                         },
                         new
                         {
-                            Id = new Guid("22222222-2222-2222-2222-222222222222"),
-                            Address = "Calle Norte 45",
-                            City = "Ciudad B",
-                            IsActive = true,
-                            IsWareHouse = true,
-                            Name = "Bodega Norte"
-                        },
-                        new
-                        {
                             Id = new Guid("33333333-3333-3333-3333-333333333333"),
                             Address = "Plaza 8 #12",
                             City = "Ciudad A",
@@ -172,15 +261,6 @@ namespace Infrastructure.Migrations
                             IsActive = true,
                             IsWareHouse = false,
                             Name = "Tienda Sur"
-                        },
-                        new
-                        {
-                            Id = new Guid("55555555-5555-5555-5555-555555555555"),
-                            Address = "Km 10 Ruta",
-                            City = "Ciudad D",
-                            IsActive = false,
-                            IsWareHouse = true,
-                            Name = "Depósito Temporal"
                         });
                 });
 
@@ -219,47 +299,47 @@ namespace Infrastructure.Migrations
                             OutboundId = new Guid("40000001-0000-0000-0000-000000000001"),
                             ProductBatchId = new Guid("20000001-0000-0000-0000-000000000001"),
                             Quantity = 10m,
-                            SubTotal = 55.0m
+                            SubTotal = 55.00m
                         },
                         new
                         {
                             Id = new Guid("50000002-0000-0000-0000-000000000002"),
                             OutboundId = new Guid("40000001-0000-0000-0000-000000000001"),
-                            ProductBatchId = new Guid("20000005-0000-0000-0000-000000000005"),
+                            ProductBatchId = new Guid("20000003-0000-0000-0000-000000000003"),
                             Quantity = 5m,
-                            SubTotal = 225.0m
+                            SubTotal = 16.00m
                         },
                         new
                         {
                             Id = new Guid("50000003-0000-0000-0000-000000000003"),
                             OutboundId = new Guid("40000002-0000-0000-0000-000000000002"),
-                            ProductBatchId = new Guid("20000003-0000-0000-0000-000000000003"),
+                            ProductBatchId = new Guid("20000005-0000-0000-0000-000000000005"),
                             Quantity = 20m,
-                            SubTotal = 64.0m
+                            SubTotal = 900.00m
                         },
                         new
                         {
                             Id = new Guid("50000004-0000-0000-0000-000000000004"),
-                            OutboundId = new Guid("40000003-0000-0000-0000-000000000003"),
-                            ProductBatchId = new Guid("20000006-0000-0000-0000-000000000006"),
-                            Quantity = 2m,
-                            SubTotal = 120.0m
+                            OutboundId = new Guid("40000002-0000-0000-0000-000000000002"),
+                            ProductBatchId = new Guid("20000008-0000-0000-0000-000000000008"),
+                            Quantity = 10m,
+                            SubTotal = 1100.00m
                         },
                         new
                         {
                             Id = new Guid("50000005-0000-0000-0000-000000000005"),
-                            OutboundId = new Guid("40000003-0000-0000-0000-000000000003"),
-                            ProductBatchId = new Guid("20000007-0000-0000-0000-000000000007"),
-                            Quantity = 15m,
-                            SubTotal = 180.0m
+                            OutboundId = new Guid("40000002-0000-0000-0000-000000000002"),
+                            ProductBatchId = new Guid("20000010-0000-0000-0000-000000000010"),
+                            Quantity = 8m,
+                            SubTotal = 1200.00m
                         },
                         new
                         {
                             Id = new Guid("50000006-0000-0000-0000-000000000006"),
-                            OutboundId = new Guid("40000005-0000-0000-0000-000000000005"),
-                            ProductBatchId = new Guid("2000000b-0000-0000-0000-00000000000b"),
-                            Quantity = 3m,
-                            SubTotal = 285.0m
+                            OutboundId = new Guid("40000002-0000-0000-0000-000000000002"),
+                            ProductBatchId = new Guid("20000013-0000-0000-0000-000000000013"),
+                            Quantity = 10m,
+                            SubTotal = 2100.00m
                         });
                 });
 
@@ -327,45 +407,11 @@ namespace Infrastructure.Migrations
                         {
                             Id = new Guid("40000002-0000-0000-0000-000000000002"),
                             DestinationId = new Guid("44444444-4444-4444-4444-444444444444"),
-                            OriginLocationId = new Guid("22222222-2222-2222-2222-222222222222"),
+                            OriginLocationId = new Guid("11111111-1111-1111-1111-111111111111"),
                             OutboundDate = new DateTime(2026, 2, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             OutboundNumber = "OUT-0002",
-                            OutboundUserId = new Guid("10000004-0000-0000-0000-000000000004"),
+                            OutboundUserId = new Guid("10000001-0000-0000-0000-000000000001"),
                             Status = "EnviadaASucursal"
-                        },
-                        new
-                        {
-                            Id = new Guid("40000003-0000-0000-0000-000000000003"),
-                            DestinationId = new Guid("33333333-3333-3333-3333-333333333333"),
-                            OriginLocationId = new Guid("11111111-1111-1111-1111-111111111111"),
-                            OutboundDate = new DateTime(2025, 12, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            OutboundNumber = "OUT-0003",
-                            OutboundUserId = new Guid("10000002-0000-0000-0000-000000000002"),
-                            ReceivedDate = new DateTime(2025, 12, 22, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            ReceivedUserId = new Guid("10000005-0000-0000-0000-000000000005"),
-                            Status = "RecibidoEnSucursal"
-                        },
-                        new
-                        {
-                            Id = new Guid("40000004-0000-0000-0000-000000000004"),
-                            DestinationId = new Guid("44444444-4444-4444-4444-444444444444"),
-                            OriginLocationId = new Guid("33333333-3333-3333-3333-333333333333"),
-                            OutboundDate = new DateTime(2026, 3, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            OutboundNumber = "OUT-0004",
-                            OutboundUserId = new Guid("10000007-0000-0000-0000-000000000007"),
-                            Status = "EnviadaASucursal"
-                        },
-                        new
-                        {
-                            Id = new Guid("40000005-0000-0000-0000-000000000005"),
-                            DestinationId = new Guid("11111111-1111-1111-1111-111111111111"),
-                            OriginLocationId = new Guid("22222222-2222-2222-2222-222222222222"),
-                            OutboundDate = new DateTime(2026, 1, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            OutboundNumber = "OUT-0005",
-                            OutboundUserId = new Guid("10000006-0000-0000-0000-000000000006"),
-                            ReceivedDate = new DateTime(2026, 1, 16, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            ReceivedUserId = new Guid("10000001-0000-0000-0000-000000000001"),
-                            Status = "RecibidoEnSucursal"
                         });
                 });
 
@@ -413,20 +459,20 @@ namespace Infrastructure.Migrations
                         {
                             Id = new Guid("20000001-0000-0000-0000-000000000001"),
                             BatchNumber = "BATCH-1001",
-                            ExpirationDate = new DateTime(2025, 6, 30, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ExpirationDate = new DateTime(2026, 6, 30, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             LocationId = new Guid("11111111-1111-1111-1111-111111111111"),
                             ProductId = new Guid("00000001-0000-0000-0000-000000000001"),
-                            Quantity = 150m,
+                            Quantity = 500m,
                             UnitCost = 5.50m
                         },
                         new
                         {
                             Id = new Guid("20000002-0000-0000-0000-000000000002"),
                             BatchNumber = "BATCH-1002",
-                            ExpirationDate = new DateTime(2025, 12, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            LocationId = new Guid("22222222-2222-2222-2222-222222222222"),
+                            ExpirationDate = new DateTime(2027, 12, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            LocationId = new Guid("11111111-1111-1111-1111-111111111111"),
                             ProductId = new Guid("00000001-0000-0000-0000-000000000001"),
-                            Quantity = 80m,
+                            Quantity = 300m,
                             UnitCost = 5.75m
                         },
                         new
@@ -436,17 +482,17 @@ namespace Infrastructure.Migrations
                             ExpirationDate = new DateTime(2026, 3, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             LocationId = new Guid("11111111-1111-1111-1111-111111111111"),
                             ProductId = new Guid("00000002-0000-0000-0000-000000000002"),
-                            Quantity = 200m,
+                            Quantity = 600m,
                             UnitCost = 3.20m
                         },
                         new
                         {
                             Id = new Guid("20000004-0000-0000-0000-000000000004"),
                             BatchNumber = "BATCH-2002",
-                            ExpirationDate = new DateTime(2026, 8, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            LocationId = new Guid("33333333-3333-3333-3333-333333333333"),
+                            ExpirationDate = new DateTime(2028, 8, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            LocationId = new Guid("11111111-1111-1111-1111-111111111111"),
                             ProductId = new Guid("00000002-0000-0000-0000-000000000002"),
-                            Quantity = 120m,
+                            Quantity = 400m,
                             UnitCost = 3.00m
                         },
                         new
@@ -456,7 +502,7 @@ namespace Infrastructure.Migrations
                             ExpirationDate = new DateTime(2027, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             LocationId = new Guid("11111111-1111-1111-1111-111111111111"),
                             ProductId = new Guid("00000003-0000-0000-0000-000000000003"),
-                            Quantity = 50m,
+                            Quantity = 350m,
                             UnitCost = 45.00m
                         },
                         new
@@ -466,7 +512,7 @@ namespace Infrastructure.Migrations
                             ExpirationDate = new DateTime(2028, 11, 30, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             LocationId = new Guid("11111111-1111-1111-1111-111111111111"),
                             ProductId = new Guid("00000004-0000-0000-0000-000000000004"),
-                            Quantity = 40m,
+                            Quantity = 250m,
                             UnitCost = 60.00m
                         },
                         new
@@ -474,19 +520,19 @@ namespace Infrastructure.Migrations
                             Id = new Guid("20000007-0000-0000-0000-000000000007"),
                             BatchNumber = "BATCH-5001",
                             ExpirationDate = new DateTime(2026, 5, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            LocationId = new Guid("22222222-2222-2222-2222-222222222222"),
+                            LocationId = new Guid("11111111-1111-1111-1111-111111111111"),
                             ProductId = new Guid("00000005-0000-0000-0000-000000000005"),
-                            Quantity = 300m,
+                            Quantity = 800m,
                             UnitCost = 12.00m
                         },
                         new
                         {
                             Id = new Guid("20000008-0000-0000-0000-000000000008"),
                             BatchNumber = "BATCH-6001",
-                            ExpirationDate = new DateTime(2025, 9, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            LocationId = new Guid("22222222-2222-2222-2222-222222222222"),
+                            ExpirationDate = new DateTime(2027, 9, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            LocationId = new Guid("11111111-1111-1111-1111-111111111111"),
                             ProductId = new Guid("00000006-0000-0000-0000-000000000006"),
-                            Quantity = 90m,
+                            Quantity = 200m,
                             UnitCost = 110.00m
                         },
                         new
@@ -494,19 +540,19 @@ namespace Infrastructure.Migrations
                             Id = new Guid("20000009-0000-0000-0000-000000000009"),
                             BatchNumber = "BATCH-7001",
                             ExpirationDate = new DateTime(2026, 2, 28, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            LocationId = new Guid("33333333-3333-3333-3333-333333333333"),
+                            LocationId = new Guid("11111111-1111-1111-1111-111111111111"),
                             ProductId = new Guid("00000007-0000-0000-0000-000000000007"),
-                            Quantity = 180m,
+                            Quantity = 450m,
                             UnitCost = 25.00m
                         },
                         new
                         {
                             Id = new Guid("2000000a-0000-0000-0000-00000000000a"),
                             BatchNumber = "BATCH-8001",
-                            ExpirationDate = new DateTime(2025, 7, 14, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            LocationId = new Guid("44444444-4444-4444-4444-444444444444"),
+                            ExpirationDate = new DateTime(2027, 7, 14, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            LocationId = new Guid("11111111-1111-1111-1111-111111111111"),
                             ProductId = new Guid("00000008-0000-0000-0000-000000000008"),
-                            Quantity = 220m,
+                            Quantity = 500m,
                             UnitCost = 8.50m
                         },
                         new
@@ -516,7 +562,7 @@ namespace Infrastructure.Migrations
                             ExpirationDate = new DateTime(2029, 10, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             LocationId = new Guid("11111111-1111-1111-1111-111111111111"),
                             ProductId = new Guid("00000009-0000-0000-0000-000000000009"),
-                            Quantity = 60m,
+                            Quantity = 300m,
                             UnitCost = 95.00m
                         },
                         new
@@ -524,19 +570,19 @@ namespace Infrastructure.Migrations
                             Id = new Guid("2000000c-0000-0000-0000-00000000000c"),
                             BatchNumber = "BATCH-10001",
                             ExpirationDate = new DateTime(2027, 4, 18, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            LocationId = new Guid("22222222-2222-2222-2222-222222222222"),
+                            LocationId = new Guid("11111111-1111-1111-1111-111111111111"),
                             ProductId = new Guid("0000000a-0000-0000-0000-00000000000a"),
-                            Quantity = 70m,
+                            Quantity = 400m,
                             UnitCost = 40.00m
                         },
                         new
                         {
                             Id = new Guid("2000000d-0000-0000-0000-00000000000d"),
                             BatchNumber = "BATCH-11001",
-                            ExpirationDate = new DateTime(2025, 12, 25, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            LocationId = new Guid("33333333-3333-3333-3333-333333333333"),
+                            ExpirationDate = new DateTime(2027, 12, 25, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            LocationId = new Guid("11111111-1111-1111-1111-111111111111"),
                             ProductId = new Guid("0000000b-0000-0000-0000-00000000000b"),
-                            Quantity = 140m,
+                            Quantity = 350m,
                             UnitCost = 22.50m
                         },
                         new
@@ -544,9 +590,9 @@ namespace Infrastructure.Migrations
                             Id = new Guid("2000000e-0000-0000-0000-00000000000e"),
                             BatchNumber = "BATCH-12001",
                             ExpirationDate = new DateTime(2026, 6, 6, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            LocationId = new Guid("44444444-4444-4444-4444-444444444444"),
+                            LocationId = new Guid("11111111-1111-1111-1111-111111111111"),
                             ProductId = new Guid("0000000c-0000-0000-0000-00000000000c"),
-                            Quantity = 95m,
+                            Quantity = 280m,
                             UnitCost = 18.00m
                         },
                         new
@@ -556,7 +602,7 @@ namespace Infrastructure.Migrations
                             ExpirationDate = new DateTime(2026, 9, 9, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             LocationId = new Guid("11111111-1111-1111-1111-111111111111"),
                             ProductId = new Guid("0000000d-0000-0000-0000-00000000000d"),
-                            Quantity = 260m,
+                            Quantity = 600m,
                             UnitCost = 4.00m
                         },
                         new
@@ -564,9 +610,9 @@ namespace Infrastructure.Migrations
                             Id = new Guid("20000010-0000-0000-0000-000000000010"),
                             BatchNumber = "BATCH-14001",
                             ExpirationDate = new DateTime(2028, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            LocationId = new Guid("22222222-2222-2222-2222-222222222222"),
+                            LocationId = new Guid("11111111-1111-1111-1111-111111111111"),
                             ProductId = new Guid("0000000e-0000-0000-0000-00000000000e"),
-                            Quantity = 30m,
+                            Quantity = 150m,
                             UnitCost = 150.00m
                         },
                         new
@@ -574,9 +620,9 @@ namespace Infrastructure.Migrations
                             Id = new Guid("20000011-0000-0000-0000-000000000011"),
                             BatchNumber = "BATCH-15001",
                             ExpirationDate = new DateTime(2027, 3, 3, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            LocationId = new Guid("33333333-3333-3333-3333-333333333333"),
+                            LocationId = new Guid("11111111-1111-1111-1111-111111111111"),
                             ProductId = new Guid("0000000f-0000-0000-0000-00000000000f"),
-                            Quantity = 110m,
+                            Quantity = 500m,
                             UnitCost = 2.50m
                         },
                         new
@@ -586,7 +632,7 @@ namespace Infrastructure.Migrations
                             ExpirationDate = new DateTime(2029, 8, 8, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             LocationId = new Guid("11111111-1111-1111-1111-111111111111"),
                             ProductId = new Guid("00000010-0000-0000-0000-000000000010"),
-                            Quantity = 45m,
+                            Quantity = 200m,
                             UnitCost = 180.00m
                         },
                         new
@@ -594,20 +640,40 @@ namespace Infrastructure.Migrations
                             Id = new Guid("20000013-0000-0000-0000-000000000013"),
                             BatchNumber = "BATCH-17001",
                             ExpirationDate = new DateTime(2026, 11, 11, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            LocationId = new Guid("44444444-4444-4444-4444-444444444444"),
+                            LocationId = new Guid("11111111-1111-1111-1111-111111111111"),
                             ProductId = new Guid("00000011-0000-0000-0000-000000000011"),
-                            Quantity = 55m,
+                            Quantity = 180m,
                             UnitCost = 210.00m
                         },
                         new
                         {
                             Id = new Guid("20000014-0000-0000-0000-000000000014"),
                             BatchNumber = "BATCH-18001",
-                            ExpirationDate = new DateTime(2025, 5, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            LocationId = new Guid("22222222-2222-2222-2222-222222222222"),
+                            ExpirationDate = new DateTime(2027, 5, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            LocationId = new Guid("11111111-1111-1111-1111-111111111111"),
                             ProductId = new Guid("00000012-0000-0000-0000-000000000012"),
-                            Quantity = 400m,
+                            Quantity = 700m,
                             UnitCost = 75.00m
+                        },
+                        new
+                        {
+                            Id = new Guid("20000015-0000-0000-0000-000000000015"),
+                            BatchNumber = "BATCH-19001",
+                            ExpirationDate = new DateTime(2027, 7, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            LocationId = new Guid("11111111-1111-1111-1111-111111111111"),
+                            ProductId = new Guid("00000013-0000-0000-0000-000000000013"),
+                            Quantity = 400m,
+                            UnitCost = 30.00m
+                        },
+                        new
+                        {
+                            Id = new Guid("20000016-0000-0000-0000-000000000016"),
+                            BatchNumber = "BATCH-20001",
+                            ExpirationDate = new DateTime(2028, 3, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            LocationId = new Guid("11111111-1111-1111-1111-111111111111"),
+                            ProductId = new Guid("00000014-0000-0000-0000-000000000014"),
+                            Quantity = 550m,
+                            UnitCost = 6.00m
                         });
                 });
 
@@ -932,96 +998,6 @@ namespace Infrastructure.Migrations
                             SecondLastName = "Soto",
                             SecondName = "Elena",
                             UserName = "mperez"
-                        },
-                        new
-                        {
-                            Id = new Guid("10000003-0000-0000-0000-000000000003"),
-                            Email = "j.ramirez@example.com",
-                            FirstName = "Javier",
-                            FullName = "Javier Ramirez",
-                            IsActive = true,
-                            LastName = "Ramirez",
-                            LocationId = new Guid("22222222-2222-2222-2222-222222222222"),
-                            PasswordHash = "HASHED_pw3",
-                            RoleId = 2,
-                            SecondLastName = "",
-                            SecondName = "",
-                            UserName = "jramirez"
-                        },
-                        new
-                        {
-                            Id = new Guid("10000004-0000-0000-0000-000000000004"),
-                            Email = "l.martinez@example.com",
-                            FirstName = "Lucia",
-                            FullName = "Lucia Beatriz Martinez Diaz",
-                            IsActive = true,
-                            LastName = "Martinez",
-                            LocationId = new Guid("22222222-2222-2222-2222-222222222222"),
-                            PasswordHash = "HASHED_pw4",
-                            RoleId = 1,
-                            SecondLastName = "Diaz",
-                            SecondName = "Beatriz",
-                            UserName = "lmartinez"
-                        },
-                        new
-                        {
-                            Id = new Guid("10000005-0000-0000-0000-000000000005"),
-                            Email = "p.sanchez@example.com",
-                            FirstName = "Pedro",
-                            FullName = "Pedro Alberto Sanchez",
-                            IsActive = true,
-                            LastName = "Sanchez",
-                            LocationId = new Guid("33333333-3333-3333-3333-333333333333"),
-                            PasswordHash = "HASHED_pw5",
-                            RoleId = 2,
-                            SecondLastName = "",
-                            SecondName = "Alberto",
-                            UserName = "psanchez"
-                        },
-                        new
-                        {
-                            Id = new Guid("10000006-0000-0000-0000-000000000006"),
-                            Email = "a.torres@example.com",
-                            FirstName = "Ana",
-                            FullName = "Ana Torres",
-                            IsActive = true,
-                            LastName = "Torres",
-                            LocationId = new Guid("44444444-4444-4444-4444-444444444444"),
-                            PasswordHash = "HASHED_pw6",
-                            RoleId = 2,
-                            SecondLastName = "",
-                            SecondName = "",
-                            UserName = "atorres"
-                        },
-                        new
-                        {
-                            Id = new Guid("10000007-0000-0000-0000-000000000007"),
-                            Email = "r.vega@example.com",
-                            FirstName = "Roberto",
-                            FullName = "Roberto Vega",
-                            IsActive = true,
-                            LastName = "Vega",
-                            LocationId = new Guid("11111111-1111-1111-1111-111111111111"),
-                            PasswordHash = "HASHED_pw7",
-                            RoleId = 2,
-                            SecondLastName = "",
-                            SecondName = "",
-                            UserName = "rvega"
-                        },
-                        new
-                        {
-                            Id = new Guid("10000008-0000-0000-0000-000000000008"),
-                            Email = "s.rios@example.com",
-                            FirstName = "Sandra",
-                            FullName = "Sandra Mar Rios Garcia",
-                            IsActive = true,
-                            LastName = "Rios",
-                            LocationId = new Guid("33333333-3333-3333-3333-333333333333"),
-                            PasswordHash = "HASHED_pw8",
-                            RoleId = 1,
-                            SecondLastName = "Garcia",
-                            SecondName = "Mar",
-                            UserName = "srios"
                         });
                 });
 

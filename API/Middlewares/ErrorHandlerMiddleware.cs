@@ -6,6 +6,11 @@ namespace API.Middlewares;
 
 public class ErrorHandlerMiddleware(RequestDelegate next)
 {
+    private static readonly JsonSerializerOptions s_jsonOptions = new()
+    {
+        PropertyNamingPolicy = JsonNamingPolicy.CamelCase
+    };
+
     public async Task Invoke(HttpContext context)
     {
         try
@@ -47,7 +52,7 @@ public class ErrorHandlerMiddleware(RequestDelegate next)
                     break;
             }
 
-            var result = JsonSerializer.Serialize(responseModel);
+            var result = JsonSerializer.Serialize(responseModel, s_jsonOptions);
 
             await response.WriteAsync(result);
         }

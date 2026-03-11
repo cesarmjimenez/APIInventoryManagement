@@ -13,13 +13,13 @@ API REST para el sistema de control de inventario. Permite gestionar salidas de 
 
 ## 🏗️ Arquitectura
 El proyecto sigue Onion Architecture dividida en 4 capas:
-
+```
 APIInventoryManagement/
 ├── API/              → Controladores, configuración, punto de entrada
 ├── Application/      → Commands, Queries, DTOs, Interfaces
 ├── Domain/           → Entidades, enums, contratos base
 └── Infrastructure/   → DbContext, repositorios, migraciones, seed data
-
+```
 ### Patrones utilizados
 - **CQRS** — separación de Commands (escritura) y Queries (lectura) con MediatR
 - **Repositorio** — acceso a datos abstraído con `IRepositoryAsync<T>` y Ardalis.Specification

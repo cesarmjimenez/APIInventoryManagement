@@ -1,6 +1,7 @@
 ﻿using Application.DTOs.OutboundsDtos;
 using Application.Exceptions;
 using Application.Interfaces;
+using Application.Specifications.InventorySpecifications;
 using Application.Wrappers;
 using AutoMapper;
 using Domain.Entities;
@@ -18,6 +19,7 @@ public class RecievedOutboundCommand : IRequest<Response<OutboundResponseDto>>
 
 public class RecievedOutboundCommandHandler(
     IRepositoryAsync<Outbounds> outboundRepositoryAsync,
+    IRepositoryAsync<Inventory> inventoryRepositoryAsync,
     IHttpContextAccessor httpContextAccessor,
     IMapper mapper) : IRequestHandler<RecievedOutboundCommand, Response<OutboundResponseDto>>
 {
@@ -37,6 +39,28 @@ public class RecievedOutboundCommandHandler(
         outbound.ReceivedUserId = Guid.Parse(userId!);
 
         await outboundRepositoryAsync.UpdateAsync(outbound, cancellationToken);
+
+        foreach (var detail in outbound.OutboundDetails)
+        {
+            var inventoryItem = await inventoryRepositoryAsync.FirstOrDefaultAsync(
+                new InventoryByLocationsAndBatchSpecification(outbound.DestinationId, detail.ProductBatchId), cancellationToken);
+
+            if (inventoryItem != null)
+            {
+                inventoryItem.StockQuantity += detail.Quantity;
+                await inventoryRepositoryAsync.UpdateAsync(inventoryItem, cancellationToken);
+            }
+            else
+            {
+                await inventoryRepositoryAsync.AddAsync(new Inventory
+                {
+                    Id = Guid.NewGuid(),
+                    LocationId = outbound.DestinationId,
+                    ProductBatchId = detail.ProductBatchId,
+                    StockQuantity = detail.Quantity
+                }, cancellationToken);
+            }
+        }
 
         return new Response<OutboundResponseDto>(mapper.Map<OutboundResponseDto>(outbound),
             "La salida fue recibida correctamente.");
